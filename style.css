@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+#main {
+  height: 100vh !important;
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.col-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-4:nth-child(1) {
+  background-color: #240229 !important;
+}
+
+.col-4:nth-child(2) {
+  background-color: #639 !important;
+}
