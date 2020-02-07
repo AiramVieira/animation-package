@@ -12,9 +12,9 @@
 
 .block {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
+  height: auto;
+  min-height: 360px;
 }
 
 .block:nth-child(1) {
@@ -26,7 +26,7 @@
 }
 
 .block:nth-child(3) {
-  background:url('./assets/img/sky-bg.jpg');
+  background: url('./assets/img/sky-bg.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -41,4 +41,12 @@
 
 .block:nth-child(6) {
   background-color: #20a81b;
+}
+
+.centralize {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
