@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="main.css" />
 
     <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
   </head>
   <body>
     <div id="main" class="row">
-      <div class="col-4 border">
+      <div class="block col-12 col-md-6 col-xl-4">
         <section class="gradient">
           <span></span>
           <span></span>
@@ -20,7 +22,7 @@
           <span></span>
         </section>
       </div>
-      <div class="col-4 border smoke">
+      <div class="block col-12 col-md-6 col-xl-4 smoke">
         <span>T</span>
         <span>A</span>
         <span>R</span>
@@ -29,24 +31,23 @@
         <span>F</span>
         <span>A</span>
       </div>
-      <div class="col-4 border">
-        <div class="flipper border rounded"></div>
+      <div class="block col-12 col-md-6 col-xl-4 border" onmouseover="playOceanSound()" onmouseout="pauseOceanSound()">
+        <audio src="assets/sounds/sea-waves.mp3" id="ocean"></audio>
+        <div class="flipper"></div>
+        <div class="boat"></div>
+        <section>
+          <div class="wave wave1"></div>
+          <div class="wave wave2"></div>
+          <div class="wave wave3"></div>
+          <div class="wave wave4"></div>
+        </section>
       </div>
-      <div class="col-4 border">
-        <svg
-          class="pulse"
-          viewBox="0 0 1024 1024"
-          version="1.1"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-        >
-          <circle id="Oval" cx="512" cy="512" r="512"></circle>
-          <circle id="Oval" cx="512" cy="512" r="512"></circle>
-          <circle id="Oval" cx="512" cy="512" r="512"></circle>
-        </svg>
+      <div class="block col-12 col-md-6 col-xl-4 border" onmouseover="playHeartBeaten()" onmouseout="pauseHeartBeaten()">
+        <audio src="assets/sounds/heartbeat.mp3" id="heart"></audio>
+        <div class="blob"></div>
       </div>
-      <div class="col-4 border"></div>
-      <div class="col-4 border"></div>
+      <div class="block col-12 col-md-6 col-xl-4 border"></div>
+      <div class="block col-12 col-md-6 col-xl-4 border"></div>
     </div>
   </body>
 </html>

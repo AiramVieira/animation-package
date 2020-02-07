@@ -1,0 +1,99 @@
+.flipper {
+  animation: spinner 0.7s cubic-bezier(0.08, -0.03, 0.18, 0.23) infinite;
+  transform-style: preserve-3d;
+  height: 250px;
+  width: 200px;
+  background: url('../../assets/img/oar.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100%;
+  position: absolute;
+  z-index: 9;
+  bottom: 25px;
+}
+
+/* all other browsers */
+@keyframes spinner {
+  0% {
+    transform: rotate3d(0, 1, 1, 0deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 1, 360deg);
+  }
+}
+
+.boat {
+  height: 85px;
+  width: 70%;
+  border: 5px solid #a96060;
+  background: linear-gradient(to bottom, brown, darkred, brown, darkred, brown, darkred);
+  background-size: 100% 20px;
+  filter: hue-rotate(45deg);
+  border-bottom-right-radius: 20em 25rem;
+  border-bottom-left-radius: 20em 25em;
+  position: absolute;
+  bottom: 55px;
+  z-index: 8;
+}
+
+section .wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url('../../assets/img/wave.png');
+  background-size: 1000px, 100px;
+}
+
+section .wave1 {
+  animation: wave 5s linear infinite;
+  z-index: 9;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+section .wave2 {
+  animation: wave 2s linear infinite;
+  z-index: 8;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+section .wave3 {
+  animation: wave 4s linear infinite;
+  z-index: 7;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+  perspective: 300px;
+}
+
+section .wave4 {
+  animation: wave 2s linear infinite;
+  z-index: 6;
+  opacity: 0.7;
+  animation-delay: 0s;
+  bottom: 20px;
+}
+
+@keyframes wave {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -1000px;
+  }
+}
+
+@keyframes wave {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: -1000px;
+  }
+}
