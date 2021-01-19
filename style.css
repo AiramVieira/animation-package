@@ -32,7 +32,7 @@
 }
 
 .block:nth-child(4) {
-  background-color: darkorange;
+  background-color: #fff8dc;
 }
 
 .block:nth-child(5) {
@@ -40,7 +40,7 @@
 }
 
 .block:nth-child(6) {
-  background-color: #20a81b;
+  background-color: #FFF;
 }
 
 .centralize {

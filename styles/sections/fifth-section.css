@@ -1,0 +1,6 @@
+.custom-card{
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  border: 1px solid darkred
+}
